@@ -49,7 +49,7 @@ def scrape_news_data(org: str, url: str):
 
     # driver = webdriver.Chrome(options=options)
     # driver = webdriver.Chrome(executable_path='E:/FinancialBot/chromedriver-win64/chromedriver.exe', options=options)
-    service = Service(executable_path='E:/FinancialBot/chromedriver-win64/chromedriver.exe')
+    service = Service(executable_path='chromedriver-win64/chromedriver.exe')
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
 
@@ -144,7 +144,7 @@ def scrape_quantitative_data(org: str, url: str):
 
     # driver = webdriver.Chrome(options=options)
     # driver = webdriver.Chrome(executable_path='E:/FinancialBot/chromedriver-win64/chromedriver.exe', options=options)
-    service = Service(executable_path='E:/FinancialBot/chromedriver-win64/chromedriver.exe')
+    service = Service(executable_path='chromedriver-win64/chromedriver.exe')
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
 
@@ -856,7 +856,7 @@ def perform_analysis(org: str):
         f.write(html_report)
 
     # Convert HTML to PDF
-    path_to_wkhtmltopdf = r'E:/FinancialBot/wkhtmltopdf/bin/wkhtmltopdf.exe'  # Adjust path if needed
+    path_to_wkhtmltopdf = r'wkhtmltopdf/bin/wkhtmltopdf.exe'  # Adjust path if needed
     config = pdfkit.configuration(wkhtmltopdf=path_to_wkhtmltopdf)
     pdf_filename = f"{org}_financial_analysis.pdf"
     

@@ -9,9 +9,9 @@ from groq import Groq
 import pdfkit
 import os
 import openai
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 # Initialize Groq client with your API key
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"] # Replace with your actual API key

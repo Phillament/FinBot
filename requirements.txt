@@ -1,0 +1,11 @@
+streamlit
+fastapi
+selenium
+html-table-parser-python3
+beautifulsoup4
+pandas
+groq
+pdfkit==0.6.1
+openai
+seaborn
+matplotlib
